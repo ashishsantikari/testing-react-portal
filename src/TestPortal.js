@@ -10,7 +10,7 @@ const Content = () => (
 
 const TestPortal = (props) => {
   return (
-      <div>
+      <div data-testid="container">
           <h2>Rendering in {props.renderInPortal ? 'portal' : 'container'}</h2>
           <Popover content={<Content />} usePortal={props.renderInPortal}>
               <Button>Click here</Button>
